@@ -1,0 +1,55 @@
+
+// Hero section
+.hero{
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3.5rem;
+        @include tablet {
+            grid-template-columns: 1fr;
+            height: 100%;
+            row-gap: 3rem;
+        }
+        &-text{
+            margin: auto 0;
+            & h1{
+                font-size: 4rem;
+                line-height: 4.3rem;
+                color: $primary-color;
+                & p{
+                    color: $secondary-color;
+                }
+                @include tablet {
+                    line-height: 3rem;
+                }
+            }
+            & h3{
+                font-size: $large-font;
+            }
+            & button{
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                border-radius: $border-radius;
+                padding: 0.75rem 1.5rem;
+                background: linear-gradient(to right, $tertiary-color 50%, $primary-color 50%);
+                background-size: 210% 100%;
+                background-position: right bottom;
+                transition: all .5s ease;
+            }
+            & button:hover{
+                background-position: left bottom;
+            }
+        }
+        &-image img{
+            text-align: center;
+            & img {
+                height: 100%;
+                width: 100%;
+              }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.navbar {
+  padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 30rem;
+    align-items: center;
+    padding: 0rem 3rem;
+  }
+}
+.navbar__title {
+  font-size: 2rem;
+}
+.navbar__bars {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: black;
+    opacity: 1;
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+}
+.navbar__menu {
+  font-size: 0.8rem;
+}
+.navbar__menu-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .navbar__menu-link {
+    display: none;
+  }
+}
+.navbar__menu-link-items {
+  padding: 0.75rem;
+  list-style: none;
+}
+.navbar__menu-link-items a {
+  text-decoration: none;
+  color: black;
+}
+.navbar__menu-link-items a button {
+  background-color: #00CC66;
+  color: white;
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.75rem 1.2rem;
+}
+.navbar__menu-link-items a button:hover {
+  background-color: #FB4B4E;
+}
+.navbar__menu-link-items a:hover {
+  color: #00CC66;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero__container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    row-gap: 3rem;
+  }
+}
+.hero__container-text {
+  margin: auto 0;
+}
+.hero__container-text h1 {
+  font-size: 4rem;
+  line-height: 4.3rem;
+  color: #00CC66;
+}
+.hero__container-text h1 p {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .hero__container-text h1 {
+    line-height: 3rem;
+  }
+}
+.hero__container-text h3 {
+  font-size: 2rem;
+}
+.hero__container-text button {
+  background-color: #00CC66;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #FB4B4E 50%, #00CC66 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+}
+.hero__container-text button:hover {
+  background-position: left bottom;
+}
+.hero__container-image img {
+  text-align: center;
+}
+.hero__container-image img img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #ECECEC;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

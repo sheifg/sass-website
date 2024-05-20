@@ -1,0 +1,6 @@
+@import "./scss/variables", "./scss/responsive", "./scss/navbar", "./scss/hero";
+
+body{
+    background-color: $background;
+    font-family: $font;
+}
