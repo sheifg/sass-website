@@ -2,7 +2,7 @@
 
 ### **Project Description:**
 
-This project aims to create website using Sass.
+The task of this coding to create website using Sass.
 
 ### *Project Objectives:*
 
